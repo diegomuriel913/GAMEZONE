@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GameZone: descubre videojuegos, explora categorías y encuentra tu próximo juego favorito.">
+    <title>GameZone | Tu universo gamer</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">GAME<span>ZONE</span></a>
+
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Juegos</a>
+            <a href="#categorias">Categorías</a>
+            <a href="#favoritos">Favoritos</a>
+        </nav>
+
+        <a href="#juegos" class="header-button">Explorar juegos</a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <p class="eyebrow">TU UNIVERSO GAMER</p>
+
+                <h1>Tu próxima aventura <span>comienza aquí.</span></h1>
+
+                <p class="hero-description">
+                    Descubre videojuegos increíbles, explora nuevos mundos
+                    y encuentra tu próxima obsesión.
+                </p>
+
+                <a href="#juegos" class="primary-button">
+                    Explorar catálogo →
+                </a>
+            </div>
+
+            <div class="hero-card">
+                <div class="hero-card-content">
+                    <p>DESCUBRE ALGO NUEVO</p>
+                    <h2>Juega sin límites.</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="games-section" id="juegos">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">NUESTRO CATÁLOGO</p>
+                    <h2>Explora los juegos</h2>
+                </div>
+
+                <span class="games-count" id="games-count">
+                    6 juegos
+                </span>
+            </div>
+
+            <label class="search-box">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    id="game-search"
+                    placeholder="Busca tu próximo juego..."
+                    aria-label="Buscar videojuegos"
+                >
+            </label>
+
+            <div class="categories" id="categorias">
+                <button class="category-button active" data-category="Todos">
+                    Todos
+                </button>
+
+                <button class="category-button" data-category="Acción">
+                    Acción
+                </button>
+
+                <button class="category-button" data-category="Aventura">
+                    Aventura
+                </button>
+
+                <button class="category-button" data-category="Deportes">
+                    Deportes
+                </button>
+
+                <button class="category-button" data-category="Carreras">
+                    Carreras
+                </button>
+            </div>
+
+            <div class="games-grid" id="games-grid">
+
+                <article class="game-card" data-category="Acción">
+                    <div class="game-image image-cyberpunk">
+                        <span class="game-tag">ACCIÓN</span>
+                        <button class="favorite-button" aria-label="Añadir Cyberpunk 2077 a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · PlayStation · Xbox</p>
+                        <h3>Cyberpunk 2077</h3>
+                        <p>Explora una ciudad futurista llena de peligros.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="Aventura">
+                    <div class="game-image image-minecraft">
+                        <span class="game-tag">AVENTURA</span>
+                        <button class="favorite-button" aria-label="Añadir Minecraft a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · Consolas · Móvil</p>
+                        <h3>Minecraft</h3>
+                        <p>Construye, explora y crea tu propio mundo.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="Acción">
+                    <div class="game-image image-gta">
+                        <span class="game-tag">ACCIÓN</span>
+                        <button class="favorite-button" aria-label="Añadir GTA V a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · PlayStation · Xbox</p>
+                        <h3>Grand Theft Auto V</h3>
+                        <p>Vive aventuras en una enorme ciudad abierta.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="Deportes">
+                    <div class="game-image image-efootball">
+                        <span class="game-tag">DEPORTES</span>
+                        <button class="favorite-button" aria-label="Añadir eFootball a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · PlayStation · Xbox · Móvil</p>
+                        <h3>eFootball</h3>
+                        <p>Compite en el campo y crea tu equipo ideal.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="Carreras">
+                    <div class="game-image image-forza">
+                        <span class="game-tag">CARRERAS</span>
+                        <button class="favorite-button" aria-label="Añadir Forza Horizon 5 a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · Xbox · PlayStation 5</p>
+                        <h3>Forza Horizon 5</h3>
+                        <p>Descubre paisajes y conduce coches increíbles.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+                <article class="game-card" data-category="Aventura">
+                    <div class="game-image image-eldenring">
+                        <span class="game-tag">AVENTURA</span>
+                        <button class="favorite-button" aria-label="Añadir Elden Ring a favoritos" aria-pressed="false">♡</button>
+                    </div>
+                    <div class="game-info">
+                        <p class="game-platform">PC · PlayStation · Xbox</p>
+                        <h3>Elden Ring</h3>
+                        <p>Enfréntate a desafíos en un mundo fantástico.</p>
+                        <button class="details-button">Ver detalles</button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p id="empty-message" class="empty-message" hidden>
+                No encontramos juegos con esa búsqueda.
+            </p>
+        </section>
+
+        <section class="favorites-section" id="favoritos">
+            <p class="eyebrow">TU COLECCIÓN</p>
+            <h2>Tu zona de favoritos</h2>
+            <p>Marca el corazón de tus juegos preferidos para guardarlos.</p>
+            <p id="favorites-count">Tienes 0 juegos favoritos.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="#inicio" class="logo">GAME<span>ZONE</span></a>
+        <p>Descubre. Juega. Repite.</p>
+        <p>© 2026 GameZone. Proyecto creado para aprender desarrollo web.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
